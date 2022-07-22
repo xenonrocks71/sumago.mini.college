@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home.html</title>
+
+    <style>
+        body {
+            background-color: rgb(182, 247, 241);
+        }
+        .t1{
+            background-color:  rgb(0, 221, 255);
+        }
+        .t2{
+            background-color:rgb(81, 208, 225) ;
+        }
+        td{
+            background-color: rgb(182, 247, 241);
+        }
+
+    </style>
+
+</head>
+<body>
+    <center><h1>Student Registration Form</h1></center>
+    <hr>
+    <center>
+        <!-- form start -->
+        <form>
+            <!-- table 1-Menu Bar -->
+
+            <table class="t1" border="2" cellpadding="10">
+                <tr>
+                    <th colspan="10"><a href="home.html">Home</a></th>
+                    <th colspan="10"><a href="registration.html">Registration</a></th>
+                    <th colspan="10"><a href="login.html">Login</a></th>
+                    <th colspan="10"><a href="staff.html">Staff</a></th>
+                    <th colspan="10"><a href="salary.html">Salary</a></th>
+                    <th colspan="10"><a href="library.html">Library</a></th>
+                    <th colspan="10"><a href="home.html">Logout</a></th>
+                </tr>
+            </table>
+            <!-- table 1 ends -->
+            <br>
+            <marquee behavior="" direction="">Developed by--->Mayur Patil...!</marquee>
+
+            <!-- table 2 starts -->
+
+            <table class="t2" border="2" cellpadding="10" >
+                <tr>
+                    <th colspan="2">Name</th>
+                    <td colspan="8"><input type="text" name="s_name" placeholder="Enter student name"></td>
+                    <th colspan="8">Father Name</th>
+                    <td colspan="8"><input type="text" name="s_fname" placeholder="Enter father name"></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Address 1</th>
+                    <td colspan="8"><textarea name="address 1" id="" cols="30" rows="10" placeholder="Enter permenet address"></textarea></td>
+                    <th colspan="8">Address 2</th>
+                    <td colspan="8"><textarea name="address 2" id="" cols="30" rows="10" placeholder="Enter residential address"></textarea></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">DOB</th>
+                    <td colspan="8"><input type="date" name="s_dob"></td>
+                    <th colspan="8">Addmission Date</th>
+                    <td colspan="8"><input type="date" name="s_add_date"></td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">City</th>
+                    <td colspan="8">
+                        <select name="s_city" id="">
+                            <option value="">Select City</option>
+                            <option value="Jalagon">Jalagon</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Sangali">Sangali</option>
+                        </select>
+                    </td>
+                    <th colspan="8">State</th>
+                    <td colspan="8">
+                        <select name="s_state" id="">
+                            <option value="">Select State</option>
+                            <option value="Maharshtra">Maharshtra</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Country</th>
+                    <td colspan="8">
+                        <select name="s_country" id="">
+                            <option value="">Select Country</option>
+                            <option value="Jalagon">India</option>
+                            <option value="Nashik">America</option>
+                            <option value="Pune">Chaina</option>
+                            <option value="Mumbai">Russia</option>
+                            <option value="Sangali">Jermany</option>
+                        </select>
+                    </td>
+                    <th colspan="2">Nationality</th>
+                    <td colspan="8"><input type="text" name="s_nationality" id="" placeholder="Enter your nationality"></td>
+
+                    <tr>
+                        <th colspan="2" rowspan="4">Gender</th>
+                        <td colspan="8" rowspan="4">
+                           <input type="radio" name="s_gen" id="">Male
+                           <input type="radio" name="s_gen" id="">Female</td>
+                        <th colspan="8" rowspan="4">Qualification</th> 
+                        <tr><td colspan="8"><input type="checkbox" name="s_qual[]" id="">Diploma</td></tr>  
+                        <tr><td colspan="8"><input type="checkbox" name="s_qual[]" id="">B.E./B.Tech</td></tr>  
+                        <tr><td colspan="8"><input type="checkbox" name="s_qual[]" id="">M.E/M.Tch</td></tr>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Course</th>
+                        <td colspan="8"><select name="s_course" id=""><option value="">Select Course</option><option value="Computer Science">Computer Science<option value="Information technology">Information technology</option><option value="">Electronics</option><option value="">Electrical</option><option value="">Mechanical</option><option value="">Civil</option><option value="">Chemical</option></select></td>
+                        <th colspan="8">Passport Photo</th>
+                        <td><input type="file" name="s_photo" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Hobies</th>
+                        <td colspan="8"><textarea name="s_hobby" id="" cols="30" rows="2" placeholder="Enter Hobbies"></textarea></td>
+                        <th colspan="2">Mobile</th>
+                        <td colspan="8"><input type="number" name="s_mobile" id="" placeholder="Students contact number"></td>
+                    </tr>
+
+                    <tr style="background-color: gray;">
+                        <th colspan="8"><input type="submit" name="submit" value="submit" id=""></th>
+                        <th colspan="15"><input type="reset" name="reset" value="reset" id=""></th>   
+                    </tr>
+                </table> 
+        </form>
+    </center>
+</body>
+</html>
